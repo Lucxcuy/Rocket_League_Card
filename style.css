@@ -193,10 +193,10 @@ p {
     /* CARTA CHICA ARRIBA */
     .small-card {
         width: 50%;
-        height: 5%;
+        height: 7%;
         position: relative;
-        left: 50px;
-        top: 34px;
+        left: -38px;
+        top: 28px;
         display: flex;
         justify-content: end;
         align-items: center ;
@@ -213,25 +213,11 @@ p {
         transform: skew(-20deg);
         border-radius: 0px 5px 5px 0px;
     }
-    
-    .logo-small-bar {
-        background-image: linear-gradient(180deg, #fffa42, #fe8180, #f91eb2);
-        opacity: calc(80%);
-        width: 100%;
-        height: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        position: relative;
-        top: -2px;
-        left: -2px;
-        border-radius: 0px 5px 5px 0px;
-    }
-    
+
     .game-name {
         font-family: sans-serif;
         position: relative;
-        left: -80px;
+        left: -78px;
         top: -2px;
         font-weight: 700;
         text-transform: uppercase;
@@ -242,8 +228,8 @@ p {
     
     .logo {
         position: absolute;
-        top: -29px;
-        left: -50px;
+        top: -6px;
+        left: -5px;
     }
     
     .logo img {
@@ -258,41 +244,26 @@ p {
         display: flex;
         flex-direction: column;
         width: 50%;
-        height: 51%;
-    }
-    
-    .car-info {
-        width: 100%;
-        display: flex;
-        flex-direction: row;
         height: 50%;
-        background: linear-gradient(360deg, #f91eb2, #dab409);
-        align-items: flex-end;
-        justify-content: flex-start;
-        border-radius: 10% 10% 0px 0px;
-        box-shadow: -7px 0px 1px 0px rgba(31, 31, 31, 0.516);
     }
     .img-auto img {
         position: absolute;
-        width: 0px;
-        height: 250px;
-        top: -20px;
-        left: 270px;
+        width: 200px;
+        height: 120px;
+        top: 97px;
+        left: -150px;
         transform: translate(158%, 130%);
         filter: drop-shadow(-3px 3px 0.7px rgba(0, 0, 0, 0.5));
         z-index: 4;
     }
-    
     .car-name {
-        width: 100%;
-        padding: 0;
         position: relative;
         left: 5px;
         top: -7px;
+        font-size: 38px;
         text-transform: uppercase;
         font-family: sans-serif;
         font-weight: bolder;
-        font-size: 10px;
         font-style: italic;
         opacity: calc(30%);
         color: #fff;
@@ -303,50 +274,16 @@ p {
     
     /* PARTE ABAJO CARTA GRANDE */
     
-    .card-bottom {
-        width: 100%;
-        height: 51%;    
-        background: linear-gradient(180deg, #ca2696, #55006a ,#00054c);
-        border-radius: 0px 0px 10% 10%;
-        box-shadow: -7px 7px 1px 0px rgba(31, 31, 31, 0.516);
-    }
-    
     .middle-card {
-        width: 22%;
+        width: 65%;
         height: 3.1%;
         position: relative;
         left: 0px;
-        top: -265px;
+        top: -175px;
         display: flex;
         justify-content: center;
         align-items: center;
         z-index: 3;
         
-    }
-    
-    .big-bar {
-        background-color: rgba(0, 0, 0, 0.929);
-        width: 90%;
-        height: 100%;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        transform: skew(-20deg);
-        border-radius: 1.2px 1.2px 1.2px 1.2px;
-    }
-    
-    .small-bar {
-        width: 100%;
-        height: 100%;
-        background: linear-gradient(180deg, #ba4bff, #480074);
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        position: relative;
-        top: -2px;
-        left: -2px;
-        opacity: calc(80%);
-        border-radius: 1.2px 1.2px 1.2px 1.2px;
-        /* achicar y hacer un brillo en el final  */
     }
 }
