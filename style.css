@@ -29,13 +29,13 @@ p {
 /* CARTA CHICA ARRIBA */
 .small-card {
     width: 18%;
-    height: 50px;
+    height: 5%;
     position: relative;
     left: -50px;
     top: 34px;
     display: flex;
-    justify-content: center;
-    align-items: center;
+    justify-content: end;
+    align-items: center ;
     
 }
 
@@ -93,7 +93,7 @@ p {
     display: flex;
     flex-direction: column;
     width: 17%;
-    height: 500px;
+    height: 51%;
 }
 
 .car-info {
@@ -104,7 +104,6 @@ p {
     background: linear-gradient(360deg, #f91eb2, #dab409);
     align-items: flex-end;
     justify-content: flex-start;
-    padding: 0px;
     border-radius: 10% 10% 0px 0px;
     box-shadow: -7px 0px 1px 0px rgba(31, 31, 31, 0.516);
 }
@@ -125,7 +124,7 @@ p {
     padding: 0;
     position: relative;
     left: 5px;
-    top: -9px;
+    top: -7px;
     text-transform: uppercase;
     font-family: sans-serif;
     font-weight: bolder;
@@ -142,7 +141,7 @@ p {
 
 .card-bottom {
     width: 100%;
-    height: 50%;    
+    height: 51%;    
     background: linear-gradient(180deg, #ca2696, #55006a ,#00054c);
     border-radius: 0px 0px 10% 10%;
     box-shadow: -7px 7px 1px 0px rgba(31, 31, 31, 0.516);
@@ -150,7 +149,7 @@ p {
 
 .middle-card {
     width: 22%;
-    height: 30px;
+    height: 3.1%;
     position: relative;
     left: 0px;
     top: -265px;
@@ -188,106 +187,166 @@ p {
 }
 
 
+@media (min-width: 375px) {
 
 
-
-
-
-
-
-@media screen and (max-width: 768px) {
-
-    .main-container {
-        width: 100vw;
-        height: 100vh;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        background-color: #000;
-    }
-    
-    /* COLORES DE LAS CARTAS */
-    .card-logo,
-    .card-container {
-        position: relative;
-        background-color: green;
-        /* background-image: linear-gradient(245deg,#ea8731, #b15315, #000);
-        box-shadow: 0px 0px 40px 5px rgba(25, 4, 7, 1); */
-    }
-    
-    
-    
     /* CARTA CHICA ARRIBA */
-    .card-logo {
-        width: 15%;
-        height: 50px;
-        left: -175px;
-        top: 30px;
+    .small-card {
+        width: 50%;
+        height: 5%;
+        position: relative;
+        left: 50px;
+        top: 34px;
         display: flex;
-        justify-content: center;
+        justify-content: end;
+        align-items: center ;
+        
+    }
+    
+    .logo-big-bar {
+        background-color: rgba(0, 0, 0, 0.929);
+        width: 50%;
+        height: 50%;
+        display: flex;
         align-items: center;
-        z-index: 3;
+        justify-content: center;
+        transform: skew(-20deg);
+        border-radius: 0px 5px 5px 0px;
+    }
+    
+    .logo-small-bar {
+        background-image: linear-gradient(180deg, #fffa42, #fe8180, #f91eb2);
+        opacity: calc(80%);
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        top: -2px;
+        left: -2px;
+        border-radius: 0px 5px 5px 0px;
+    }
+    
+    .game-name {
+        font-family: sans-serif;
+        position: relative;
+        left: -80px;
+        top: -2px;
+        font-weight: 700;
+        text-transform: uppercase;
+        color: #fff;
+        white-space: nowrap;
+        font-size: 50%;
     }
     
     .logo {
         position: absolute;
-        top: -25px;
-        left: -60px;
+        top: -29px;
+        left: -50px;
     }
     
     .logo img {
-        width: 135px;
-    }
-    
-    .game-name {
-        display: block;
-        font-weight: 700;
-        /* font-size: 100px; */
-        text-transform: uppercase;
-        text-align: center;
-        color: #fff;
+        width: 50px;
+        height: 50px;
+        filter: drop-shadow(-7px 7px 0.7px rgba(0, 0, 0, 0.5));
     }
     
     /* CARTA GRANDE */
     
     .card-container {
+        display: flex;
+        flex-direction: column;
         width: 50%;
-        height: 500px;
+        height: 51%;
     }
     
+    .car-info {
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        height: 50%;
+        background: linear-gradient(360deg, #f91eb2, #dab409);
+        align-items: flex-end;
+        justify-content: flex-start;
+        border-radius: 10% 10% 0px 0px;
+        box-shadow: -7px 0px 1px 0px rgba(31, 31, 31, 0.516);
+    }
     .img-auto img {
-    
         position: absolute;
-        width: 400px;
-        height: 0px;
-        top: 70px;
-        left: 200px;
-        z-index: 1;
-        display: none;
+        width: 0px;
+        height: 250px;
+        top: -20px;
+        left: 270px;
+        transform: translate(158%, 130%);
+        filter: drop-shadow(-3px 3px 0.7px rgba(0, 0, 0, 0.5));
+        z-index: 4;
     }
     
     .car-name {
+        width: 100%;
+        padding: 0;
         position: relative;
+        left: 5px;
+        top: -7px;
         text-transform: uppercase;
         font-family: sans-serif;
         font-weight: bolder;
-        font-size: 20px;
+        font-size: 10px;
         font-style: italic;
-        opacity: 50%;
+        opacity: calc(30%);
         color: #fff;
-        bottom: 0;
-        z-index: 3;
+        filter: drop-shadow(-7px 7px 0px rgb(0,0,0));
+        z-index: 5;
+        /* baja la altura del texto */
     }
     
     /* PARTE ABAJO CARTA GRANDE */
     
     .card-bottom {
         width: 100%;
-        height: 230px;
-        background-color: #fff;
-        position: absolute;
-        bottom: 0;
+        height: 51%;    
+        background: linear-gradient(180deg, #ca2696, #55006a ,#00054c);
+        border-radius: 0px 0px 10% 10%;
+        box-shadow: -7px 7px 1px 0px rgba(31, 31, 31, 0.516);
     }
     
+    .middle-card {
+        width: 22%;
+        height: 3.1%;
+        position: relative;
+        left: 0px;
+        top: -265px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        z-index: 3;
+        
+    }
+    
+    .big-bar {
+        background-color: rgba(0, 0, 0, 0.929);
+        width: 90%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transform: skew(-20deg);
+        border-radius: 1.2px 1.2px 1.2px 1.2px;
+    }
+    
+    .small-bar {
+        width: 100%;
+        height: 100%;
+        background: linear-gradient(180deg, #ba4bff, #480074);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        top: -2px;
+        left: -2px;
+        opacity: calc(80%);
+        border-radius: 1.2px 1.2px 1.2px 1.2px;
+        /* achicar y hacer un brillo en el final  */
+    }
 }
